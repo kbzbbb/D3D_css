@@ -16,7 +16,7 @@ int take_pid(const wchar_t* name)
 
 uintptr_t take_module(const wchar_t* module_name)
 {
-	HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPMODULE32 | TH32CS_SNAPMODULE, pid);
+	HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPMODULE32 | TH32CS_SNAPMODULE, data::pid);
 	MODULEENTRY32 mo32;
 	mo32.dwSize = sizeof(MODULEENTRY32);
 

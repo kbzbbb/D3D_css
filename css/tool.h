@@ -11,13 +11,13 @@ uintptr_t take_module(const wchar_t* module_name);
 template<class T>
 T read_memory(uintptr_t address) {
 	T t;
-	ReadProcessMemory(handle, reinterpret_cast<LPVOID>(address), &t, sizeof(T), nullptr);
+	ReadProcessMemory(data::handle, reinterpret_cast<LPVOID>(address), &t, sizeof(T), nullptr);
 	return t;
 }
 
 template<class T>
 void read_list(uintptr_t address, void* t, int length) {
-	ReadProcessMemory(handle, reinterpret_cast<LPVOID>(address), t, length * (sizeof(T)), nullptr);
+	ReadProcessMemory(data::handle, reinterpret_cast<LPVOID>(address), t, length * (sizeof(T)), nullptr);
 }
 
 template<class T>
@@ -34,7 +34,7 @@ T read_multilevel(uintptr_t address, std::vector<uintptr_t> Offset_array) {
 
 template<class T>
 void write_memory(uintptr_t address, T write) {
-	WriteProcessMemory(handle, reinterpret_cast<LPVOID>(address), &write, sizeof(T), NULL);
+	WriteProcessMemory(data::handle, reinterpret_cast<LPVOID>(address), &write, sizeof(T), NULL);
 }
 
 template<class T>

@@ -17,25 +17,26 @@ WNDCLASSEX wClass;
 typedef void(*Draw)();
 Draw Render;
 
-int pid = 0;
-HANDLE handle = nullptr;
-HWND Game_handle = 0x0;
-uintptr_t module = 0x0;
-uintptr_t module2 = 0x0;
-float Sc_z;
-float Sc_x;
-float Sc_foot;
-float Sc_head;
-float BoxHeight;
-float BoxWidth;
-int Gamer_quantity;
-Figure_Data figure_data;
-uintptr_t repeat = 0;
-int Myself_camp;
-int ViewWidth = 0;
-int ViewHeight = 0;
-RECT RectGame;
-float Matrix[4][4];
+namespace data {
+	int pid = 0;
+	HANDLE handle = nullptr;
+	HWND Game_handle = 0x0;
+	uintptr_t module = 0x0;
+	uintptr_t module2 = 0x0;
 
-std::vector<uintptr_t> gamer_quantity = { 0x0058D758,0x500,0x4,0xC,0x4 };
-uintptr_t list_head;
+	int Gamer_quantity = 0;
+	int ViewWidth = 0;
+	int ViewHeight = 0;
+	float Sc_z;
+	float Sc_x;
+	float Sc_foot;
+	float Sc_head;
+
+	//Æ«ÒÆ
+	std::vector<uintptr_t> gamer_quantity = { 0x0058D758,0x500,0x4,0xC,0x4 };
+	std::vector<uintptr_t> w = { 0x004F615C };
+	std::vector<uintptr_t> Matrix_address = { 0x005AAAA4 };
+
+	//¿ª¹Ø
+	bool pane = true;
+}

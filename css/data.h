@@ -28,26 +28,27 @@ extern  WNDCLASSEX wClass;
 typedef void(*Draw)();
 extern  Draw Render;
 
-extern int pid;
-extern HANDLE handle;
-extern  HWND Game_handle;
-extern uintptr_t module;
-extern uintptr_t module2;
-extern float Sc_z;
-extern float Sc_x;
-extern float Sc_foot;
-extern float Sc_head;
-extern float BoxHeight;
-extern float BoxWidth;
-extern int Gamer_quantity;
-extern Figure_Data figure_data;
-extern uintptr_t repeat;
-extern int Myself_camp;
-extern int ViewWidth;
-extern int ViewHeight;
-extern RECT RectGame;
-extern float Matrix[4][4];
+namespace data {
+	extern int pid;
+	extern HANDLE handle;
+	extern  HWND Game_handle;
+	extern uintptr_t module;
+	extern uintptr_t module2;
 
-//Æ«ÒÆ
-extern std::vector<uintptr_t> gamer_quantity;
-extern uintptr_t list_head;
+	extern 	int Gamer_quantity;
+	extern int ViewWidth;
+	extern int ViewHeight;
+	extern float Sc_z;
+	extern float Sc_x;
+	extern float Sc_foot;
+	extern float Sc_head;
+
+	//Æ«ÒÆ
+	extern std::vector<uintptr_t> gamer_quantity;
+	extern std::vector<uintptr_t> w;
+	extern std::vector<uintptr_t> Matrix_address;
+
+	//¿ª¹Ø
+	extern bool pane;
+}
+
