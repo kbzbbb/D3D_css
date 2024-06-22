@@ -146,7 +146,7 @@ void Draw_writing(float X, float Y, const char* Str, D3DCOLOR Color)
 	Font->DrawTextA(NULL, Str, -1, &Rect, DT_LEFT, Color);
 }
 
-void Draw_frame(float X, float Y, float W, float H, float Width, D3DCOLOR Color)
+void Draw_frame(float X, float Y, float W, float H,  D3DCOLOR Color, float Width)
 {
 	D3DXVECTOR2 Vertex[5] = { {X,Y},{X + W,Y},{X + W,Y + H},{X,Y + H},{X,Y} };
 	pLine->SetWidth(Width);

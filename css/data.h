@@ -35,13 +35,16 @@ namespace data {
 	extern uintptr_t module;
 	extern uintptr_t module2;
 
-	extern 	int Gamer_quantity;
-	extern int ViewWidth;
-	extern int ViewHeight;
-	extern float Sc_z;
-	extern float Sc_x;
-	extern float Sc_foot;
-	extern float Sc_head;
+	//extern 	int Gamer_quantity;
+	//extern int ViewWidth;
+	//extern int ViewHeight;
+	//extern float Sc_z;
+	//extern float Sc_x;
+	//extern float Sc_foot;
+	//extern float Sc_head;
+	//extern float BoxHeight;
+	//extern float BoxWidth;
+	//extern float hpPercentage;
 
 	//Æ«ÒÆ
 	extern std::vector<uintptr_t> gamer_quantity;

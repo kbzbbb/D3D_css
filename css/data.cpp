@@ -24,13 +24,16 @@ namespace data {
 	uintptr_t module = 0x0;
 	uintptr_t module2 = 0x0;
 
-	int Gamer_quantity = 0;
-	int ViewWidth = 0;
-	int ViewHeight = 0;
-	float Sc_z;
-	float Sc_x;
-	float Sc_foot;
-	float Sc_head;
+	//int Gamer_quantity = 0;
+	//int ViewWidth = 0;
+	//int ViewHeight = 0;
+	//float Sc_z;
+	//float Sc_x;
+	//float Sc_foot;
+	//float Sc_head;
+	//float BoxHeight;
+	//float BoxWidth;
+	//float hpPercentage;
 
 	//Æ«ÒÆ
 	std::vector<uintptr_t> gamer_quantity = { 0x0058D758,0x500,0x4,0xC,0x4 };
